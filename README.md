@@ -1,0 +1,3 @@
+C the hard way
+
+exercises...
