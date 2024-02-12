@@ -1,3 +1,4 @@
+#include <limits.h>
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
@@ -34,6 +35,10 @@ int main(int argc, char *argv[]) {
   char nul_byte = '\0';
   int char_percentage = bugs * nul_byte;
   printf("Which means you should care %d%%.\n", char_percentage);
+
+  printf("The maximum value for a long is: %ld.\n", LONG_MAX);
+  printf("The minimum value for a long is: %ld.\n", LONG_MIN);
+  printf("The maximum value for a unsigned long is: %lu.\n", ULONG_MAX);
 
   return 0;
 }
